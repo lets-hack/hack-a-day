@@ -1,0 +1,5 @@
+#!/bin/bash
+for file in *.html ; do
+filename=$(basename "$file")
+/usr/sbin/cupsfilter "$file" > "$filename.pdf"
+done
